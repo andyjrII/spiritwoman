@@ -44,6 +44,113 @@ body {
   background-color: #4b0082;
 }
 
+/* Index Page */
+
+.hero-section {
+  background-image: url('../images/serene-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Set the overlay to cover the entire section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section .section-title,
+.connect-section .section-title,
+.offerings-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4b0082;
+}
+
+.connect-section .btn {
+  margin-top: 10px;
+}
+
+.card-body {
+  height: 300px;
+}
+
+.offering-card {
+  background-size: cover;
+  background-position: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.col-lg-4:nth-child(1) .offering-card {
+  background-color: #6a1b9a; /* Deep purple */
+}
+
+.col-lg-4:nth-child(2) .offering-card {
+  background-color: #0288d1; /* Light blue */
+}
+
+.col-lg-4:nth-child(3) .offering-card {
+  background-color: #43a047; /* Green */
+}
+
+.col-lg-4:nth-child(4) .offering-card {
+  background-color: #ff7043;
+}
+
+.col-lg-4:nth-child(5) .offering-card {
+  background-color: #d12b02;
+}
+
+.col-lg-4:nth-child(6) .offering-card {
+  background-color: #00897b;
+}
+
+.offering-card .card-title {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+.offering-card .card-text {
+  font-size: 1rem;
+  padding: 10px;
+  color: #f0f0f0;
+}
+
 /* Footer */
 
 .footer {
@@ -52,7 +159,7 @@ body {
 }
 
 .footer-logo {
-  width: 100px;
+  width: 80px;
 }
 
 .footer-link {
