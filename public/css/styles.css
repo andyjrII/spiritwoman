@@ -32,8 +32,15 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #4b0082;
-  text-decoration: underline;
+  background-color: #4b0082;
+  color: #ccc;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #4b0082;
+  color: #ccc !important;
+  border-radius: 5px;
 }
 
 .navbar-toggler {
@@ -205,6 +212,8 @@ body {
 
 .footer-logo {
   width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .footer-link {
