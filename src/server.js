@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const passport = require('passport');
-const session = require('express-session');
+//const passport = require('passport');
+//const session = require('express-session');
 const flash = require('connect-flash');
-const initializePassport = require('./auth/passportConfig');
+//const initializePassport = require('./auth/passportConfig');
 const indexRoutes = require('./routes/index');
-const adminRoutes = require('./routes/admin');
+//const adminRoutes = require('./routes/admin');
 
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
@@ -18,8 +18,9 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: true }));
 
 // Passport
-initializePassport(passport);
+//initializePassport(passport);
 
+/*
 app.use(
   session({
     secret: process.env.JWT_SECRET,
@@ -30,6 +31,7 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
+*/
 app.use(flash());
 
 app.use((req, res, next) => {
@@ -41,7 +43,7 @@ app.use((req, res, next) => {
 
 // Use routes from the "routes" directory
 app.use('/', indexRoutes);
-app.use('/admin', adminRoutes);
+//app.use('/admin', adminRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 3001;
