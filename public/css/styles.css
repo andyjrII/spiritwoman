@@ -151,6 +151,51 @@ body {
   color: #f0f0f0;
 }
 
+/* Our Beliefs */
+
+.beliefs-hero {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(197, 239, 247, 0.8)
+    ),
+    url('../images/beliefs.jpg');
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.principles-section {
+  padding: 30px;
+  background-color: #f0f4f8; /* Soft light background to separate the section */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-statement {
+  font-size: 1.25rem; /* Slightly larger text for emphasis */
+  font-weight: 300; /* Light weight for elegance */
+  color: #555; /* Neutral dark color */
+  line-height: 1.6; /* Increased line height for readability */
+  margin-bottom: 0;
+}
+
+.join-us-section {
+  background-color: #f3e5f5; /* Light lavender background */
+  padding: 60px 0; /* Top and bottom padding for breathing room */
+}
+
+.join-us-section h2 {
+  font-size: 2.5rem; /* Larger heading for emphasis */
+  color: #6a1b9a; /* Soft maroon color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.join-us-section p {
+  font-size: 1.1rem; /* Slightly larger paragraph text */
+  color: #555; /* Dark gray for readability */
+  margin-bottom: 15px; /* Add space between paragraphs */
+}
+
 /* Footer */
 
 .footer {
