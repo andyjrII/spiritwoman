@@ -17,14 +17,15 @@
     soon as possible.
   </p>
 
-  <form>
+  <form id="contact-form">
     <div class="row">
       <div class="col-md-6 mb-3">
-        <label for="fullName">Full Name</label>
+        <label for="name">Full Name</label>
         <input
           type="text"
           class="form-control"
-          id="fullName"
+          id="name"
+          name="name"
           placeholder="Enter your full name"
           required
         />
@@ -36,6 +37,7 @@
           type="email"
           class="form-control"
           id="email"
+          name="email"
           placeholder="Enter your email"
           required
         />
@@ -49,13 +51,14 @@
           type="tel"
           class="form-control"
           id="phone"
+          name="phone"
           placeholder="Enter your contact number"
         />
       </div>
 
       <div class="col-md-6 mb-3">
         <label for="source">How did you hear about us?</label>
-        <select class="form-control" id="source" required>
+        <select class="form-control" id="source" name="source" required>
           <option value="" disabled selected>Select one option</option>
           <option value="Social Media">Social Media</option>
           <option value="Friend/Family">Friend/Family</option>
@@ -71,6 +74,7 @@
         type="text"
         class="form-control"
         id="subject"
+        name="subject"
         placeholder="What would you like to reach out about?"
         required
       />
@@ -81,6 +85,7 @@
       <textarea
         class="form-control"
         id="message"
+        name="message"
         rows="4"
         placeholder="Tell us what’s on your heart or how we can support you"
         required
@@ -91,4 +96,11 @@
   </form>
 </div>
 
+<!-- Success Popup -->
+<div id="popup" class="popup hidden">
+  <p>Email sent successfully!</p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="/js/script.js"></script>
 ` }) %>
