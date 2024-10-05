@@ -1,1 +1,94 @@
-<%- include('layout', { title: 'Contact Us', body: `` }) %>
+<%- include('layout', { title: 'Contact Us', body: `
+<section class="text-center py-5 beliefs-hero">
+  <h1 class="display-4 text-primary">Contact Us</h1>
+  <h3 class="display-6 text-success">
+    Welcome to The Spiritual Woman Fellowship
+  </h3>
+  <p class="lead text-muted">Discover Your Path to Spiritual Growth</p>
+</section>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Get in Touch</h2>
+  <p class="text-center">
+    At The Spiritual Woman, we believe in the transformative power of love,
+    faith, and prayers to enrich and elevate every aspect of your life. If you
+    have any questions, need support, or simply want to connect, we’d love to
+    hear from you. Please fill out the form below, and we’ll get back to you as
+    soon as possible.
+  </p>
+
+  <form>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="fullName">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="fullName"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="phone">Phone Number (Optional)</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phone"
+          placeholder="Enter your contact number"
+        />
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="source">How did you hear about us?</label>
+        <select class="form-control" id="source" required>
+          <option value="" disabled selected>Select one option</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Friend/Family">Friend/Family</option>
+          <option value="Search Engine">Search Engine</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="subject">Subject</label>
+      <input
+        type="text"
+        class="form-control"
+        id="subject"
+        placeholder="What would you like to reach out about?"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="message">Message</label>
+      <textarea
+        class="form-control"
+        id="message"
+        rows="4"
+        placeholder="Tell us what’s on your heart or how we can support you"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+` }) %>

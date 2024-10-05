@@ -22,7 +22,7 @@ body {
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4b0082; /* Deep purple/navy for spiritual depth */
+  color: #4b0082;
 }
 
 .navbar-nav .nav-link {
@@ -87,7 +87,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
-  position: absolute; /* Set the overlay to cover the entire section */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -199,8 +199,80 @@ body {
 
 .join-us-section p {
   font-size: 1.1rem; /* Slightly larger paragraph text */
-  color: #555; /* Dark gray for readability */
-  margin-bottom: 15px; /* Add space between paragraphs */
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Contact Us */
+
+h1,
+p {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  background-color: #f8f9fa; /* Light background for the form */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+form {
+  padding: 30px;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.form-control:focus {
+  border-color: #0288d1; /* Focus border color */
+  box-shadow: 0 0 5px rgba(2, 136, 209, 0.5); /* Shadow on focus */
+}
+
+textarea.form-control {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.btn-primary {
+  background-color: #0288d1; /* Button color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #0277bd; /* Darker blue on hover */
+}
+
+label {
+  font-weight: bold; /* Bold labels for clarity */
+  color: #333; /* Dark text color */
+}
+
+.container h2 {
+  color: #000232;
+  font-size: 2.5rem;
+}
+
+.container p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
 }
 
 /* Privacy Policy */
@@ -243,7 +315,7 @@ body {
 }
 
 .contact-info p {
-  margin-bottom: 5px; /* Make contact details compact */
+  margin-bottom: 5px;
 }
 
 /* Footer */
