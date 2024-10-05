@@ -211,7 +211,7 @@ p {
   text-align: center;
 }
 
-.container {
+.container.contact {
   background-color: #f8f9fa; /* Light background for the form */
   padding: 30px;
   border-radius: 10px; /* Rounded corners */
@@ -254,12 +254,12 @@ label {
   color: #333;
 }
 
-.container h2 {
+.container.contact h2 {
   color: #000232;
   font-size: 2.5rem;
 }
 
-.container p {
+.container.contact p {
   color: #555;
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -283,7 +283,7 @@ label {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container.contact {
     padding: 20px;
   }
 
