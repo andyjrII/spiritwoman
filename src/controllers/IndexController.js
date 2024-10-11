@@ -22,7 +22,7 @@ exports.postSendMail = (req, res) => {
     from: email,
     to: address,
     subject: subject,
-    text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSource: ${source}\nMessage: ${message}`,
+    text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSource: ${source}\n\n ${message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

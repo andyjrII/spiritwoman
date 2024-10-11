@@ -1,25 +1,25 @@
-/* Form submission and popup */
-
 document
   .getElementById('contact-form')
   .addEventListener('submit', async function (event) {
     event.preventDefault();
 
     const form = document.getElementById('contact-form');
-    const formData = new FormData(form);
+
+    // Gather form data into an object
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value || 'Not provided', // Optional field
+      subject: form.subject.value,
+      source: form.source.value,
+      message: form.message.value,
+    };
 
     // Send form data via fetch
     try {
       const response = await fetch('/send-email', {
         method: 'POST',
-        body: JSON.stringify({
-          name: formData.get('name'),
-          email: formData.get('email'),
-          phone: formData.get('phone'),
-          subject: formData.get('subject'),
-          source: formData.get('source'),
-          message: formData.get('message'),
-        }),
+        body: JSON.stringify(formData),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -37,7 +37,3 @@ document
       alert('Something went wrong: ' + error.message);
     }
   });
-
-function closePopup() {
-  document.getElementById('popup').classList.add('hidden');
-}
