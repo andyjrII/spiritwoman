@@ -98,9 +98,11 @@
 </div>
 
 <!-- Success Popup -->
-<div id="popup" class="popup hidden">
-  <p>Email sent successfully!</p>
-  <button onclick="closePopup()">Close</button>
+<div id="popup" class="hidden">
+  <div class="popup-content">
+    <p>Email delivered successfully!</p>
+    <button id="close-popup" onclick="closePopup()">Close</button>
+  </div>
 </div>
 
 <script src="/js/script.js"></script>

@@ -37,3 +37,7 @@ document
       alert('Something went wrong: ' + error.message);
     }
   });
+
+function closePopup() {
+  document.getElementById('popup').classList.add('hidden');
+}
