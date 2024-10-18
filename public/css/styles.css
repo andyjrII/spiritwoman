@@ -119,7 +119,7 @@ nav .container img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -157,7 +157,7 @@ nav .container img {
 .about-section .section-title,
 .connect-section .section-title,
 .offerings-section .section-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #4b0082;
 }
@@ -171,7 +171,7 @@ nav .container img {
 }
 
 .card-body {
-  height: 300px;
+  height: 400px;
 }
 
 .offering-card {
@@ -185,9 +185,9 @@ nav .container img {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 10px;
-  padding: 30px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: fill;
 }
 
 .offering-card:hover {
@@ -196,27 +196,63 @@ nav .container img {
 }
 
 .col-lg-4:nth-child(1) .offering-card {
-  background-color: #6a1b9a; /* Deep purple */
+  background-image: url('../images/practices-bg.jpg');
+}
+
+.col-lg-4:nth-child(1) .offering-card .card-body {
+  background-color: rgba(106, 27, 154, 0.4);
+  margin: 0;
+  width: 100%;
 }
 
 .col-lg-4:nth-child(2) .offering-card {
-  background-color: #0288d1; /* Light blue */
+  background-image: url('../images/inspiration.jpg');
+}
+
+.col-lg-4:nth-child(2) .offering-card .card-body {
+  background-color: rgba(2, 136, 209, 0.4);
+  margin: 0;
+  width: 100%;
 }
 
 .col-lg-4:nth-child(3) .offering-card {
-  background-color: #43a047; /* Green */
+  background-image: url('../images/community.jpg'); /* Green */
+}
+
+.col-lg-4:nth-child(3) .offering-card .card-body {
+  background-color: rgba(67, 160, 71, 0.4);
+  margin: 0;
+  width: 100%;
 }
 
 .col-lg-4:nth-child(4) .offering-card {
-  background-color: #ff7043;
+  background-image: url('../images/events.jpg');
+}
+
+.col-lg-4:nth-child(4) .offering-card .card-body {
+  background-color: rgba(248, 192, 88, 0.4);
+  margin: 0;
+  width: 100%;
 }
 
 .col-lg-4:nth-child(5) .offering-card {
-  background-color: #d12b02;
+  background-image: url('../images/love.jpg');
+}
+
+.col-lg-4:nth-child(5) .offering-card .card-body {
+  background-color: rgba(209, 43, 2, 0.4);
+  margin: 0;
+  width: 100%;
 }
 
 .col-lg-4:nth-child(6) .offering-card {
-  background-color: #00897b;
+  background-image: url('../images/prayer.jpg');
+}
+
+.col-lg-4:nth-child(6) .offering-card .card-body {
+  background-color: rgba(0, 137, 123, 0.4);
+  margin: 0;
+  width: 100%;
 }
 
 .offering-card .card-title {
@@ -309,7 +345,7 @@ nav .container img {
 /* Contact Us */
 
 h1,
-p {
+.contact p {
   margin: 0;
   text-align: center;
 }
